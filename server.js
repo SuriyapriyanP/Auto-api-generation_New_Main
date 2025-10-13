@@ -104,7 +104,7 @@ app.all("/api/schema", async (req, res) => {
         return res.status(405).json({ error: "Method not allowed" });
     }
   } catch (err) {
-    console.error("❌ Error in /api/schema:", err);
+    console.error("❌ Error in /api/schemas:", err);
     res.status(500).json({ error: err.message });
   }
 });
